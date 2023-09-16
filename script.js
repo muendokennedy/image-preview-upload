@@ -1,7 +1,14 @@
 const dragArea = document.querySelector('.drag-area');
 const dragText = document.querySelector('.header');
 
+let button = document.querySelector('.button');
+let input = document.querySelector('input');
+
 let file;
+
+button.onclick = () => {
+  input.click();
+}
 
 
 // When the file is inside the drag area

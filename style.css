@@ -38,6 +38,11 @@ body{
 .drag-area.active{
   border: .2rem solid #1683ff;
 }
+.drag-area img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .container h3{
   margin-bottom: 2rem;
   font-weight: 500;

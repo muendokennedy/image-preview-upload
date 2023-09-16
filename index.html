@@ -12,15 +12,17 @@
 <body>
   <div class="container">
     <h3>Upload your file</h3>
-    <div class="drag-area">
-      <div class="icon">
-        <i class="fa-solid fa-cloud-upload-alt"></i>
+    <form action="#" method="GET">
+      <div class="drag-area">
+        <div class="icon">
+          <i class="fa-solid fa-cloud-upload-alt"></i>
+        </div>
+        <span class="header">Drag and drop</span>
+        <span class="header">or <span class="button">Browse</span></span>
+        <div class="support">Supports: JPEG, JPG, PNG</div>
       </div>
-      <span class="header">Drag and drop</span>
-      <span class="header">or <span class="button">Browse</span></span>
-      <input type="file" name="" id="" hidden>
-      <div class="support">Supports: JPEG, JPG, PNG</div>
-    </div>
+      <input type="file" name="image" hidden>
+    </form>
   </div>
   <script src="script.js"></script>
 </body>

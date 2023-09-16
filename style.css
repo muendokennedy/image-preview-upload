@@ -28,7 +28,7 @@ body{
 }
 .drag-area{
   height: 40rem;
-  border: 0.3rem dotted #e0eafc;
+  border: 0.3rem dashed #e0eafc;
   display: flex;
   align-items: center;
   justify-content: center;

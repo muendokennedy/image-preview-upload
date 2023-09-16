@@ -39,7 +39,6 @@ dragArea.addEventListener('drop', (e) => {
   e.preventDefault();
   file = e.dataTransfer.files[0];
   displayFile();
-
 });
 
 function displayFile(){

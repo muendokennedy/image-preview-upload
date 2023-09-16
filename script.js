@@ -69,5 +69,8 @@ window.onclick = (e) => {
   if(e.target.classList.contains('remove-btn')){
     e.target.parentElement.remove();
     dragArea.appendChild(initialInfo);
+  }else if(e.target.parentElement.classList.contains('remove-btn')){
+    e.target.parentElement.parentElement.remove();
+    dragArea.appendChild(initialInfo);
   }
 }

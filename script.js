@@ -1,5 +1,6 @@
 const dragArea = document.querySelector('.drag-area');
 const dragText = document.querySelector('.header');
+const initialInfo = document.querySelector('.initial-info');
 
 let button = document.querySelector('.button');
 let input = document.querySelector('input');
@@ -51,12 +52,22 @@ function displayFile(){
 
     fileReader.onload = () => {
       let fileURL = fileReader.result;
-      let imgTag = `<img src="${fileURL}" alt="">`;
+      let imgTag = `<div class="uploaded-image">
+      <img src="${fileURL}" alt="">
+      <button type="button" class="remove-btn"><i class="fa-solid fa-times"></i></button>
+    </div>`;
       dragArea.innerHTML = imgTag;
     }
     fileReader.readAsDataURL(file);
     dragArea.classList.remove('active');
   } else {
     alert('This file is not an image');
+  }
+}
+
+window.onclick = (e) => {
+  if(e.target.classList.contains('remove-btn')){
+    e.target.parentElement.remove();
+    dragArea.appendChild(initialInfo);
   }
 }

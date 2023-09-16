@@ -35,6 +35,9 @@ body{
   flex-direction: column;
   margin: 1rem auto;
 }
+.drag-area.active{
+  border: .2rem solid #1683ff;
+}
 .container h3{
   margin-bottom: 2rem;
   font-weight: 500;

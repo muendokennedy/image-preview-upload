@@ -62,6 +62,7 @@ function displayFile(){
     dragArea.classList.remove('active');
   } else {
     alert('This file is not an image');
+    dragArea.classList.remove('active');
   }
 }
 
